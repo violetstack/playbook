@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Violet Stack &rarr; Our Playbook</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+  <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Your awesome title">
+</head>
+
+  <body>
+    <main role="main">
+      <header class="content top-nav">
+        <a href="https://www.violetstack.com" class="logo-circle"></a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/">Our Playbook</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {% if page.name == "index.md" %}
+        <div class="hero-image hero-home animated fadeIn"></div>
+      {% elsif page.photo %}
+        <div class="hero-image animated fadeIn" style="background-image: url({{page.photo}});"></div>
+      {% else %}
+        <div class="hero-image-space"></div>
+      {% endif %}
+
+      <article class="content mid-wrap">
+        {{ content }}
+      </article>
+
+      <footer class="footer">
+
+      </footer>
+    </main>
+  </body>
+</html>

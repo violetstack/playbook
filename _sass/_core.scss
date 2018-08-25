@@ -1,0 +1,57 @@
+/* ==========================================================================
+ 0. Core - CSS Variables, Mixins, and Utilities
+ ========================================================================== */
+
+@import "fonts";
+
+$color_dark_grey: #4a4a4a;
+$color_grey: #9a9a9a;
+// $color_violet: #682CF4;
+$color_violet: #483AED;
+
+$color_body: $color_dark_grey;
+$color_title: $color_violet;
+$color_subtle_copy: $color_grey;
+
+$font_stack: "Source Sans Pro", "San Francisco", "Roboto", "Droid Sans", sans-serif;
+$font_stack_serif: "Source Serif Pro", serif;
+
+$material-curve: cubic-bezier(.62,.28,.23,.99);
+
+// For displaying retina assets
+// Pulled from @Stammy: http://paulstamatiou.com/responsive-retina-blog-development-part-2
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (-o-min-device-pixel-ratio: 13/10),
+  only screen and (min-resolution: 120dpi) {
+    @content;
+  }
+}
+
+@mixin font-smoothing(){
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@mixin transition($type: all, $duration: .32s, $function: $material-curve){
+  transition: $type $duration $function;
+}
+
+// For tabelts and mid-sized mobile devices. Typically 54em.
+@mixin mq-tablet {
+  @media (max-width: 54em) {
+    @content;
+  }
+}
+
+// For smartphones and personal (small) mobile devices. Typically 30em.
+@mixin mq-personal {
+  @media  (max-width: 30em) {
+    @content;
+  }
+}
+
+@import "normalize";
+@import "animate";
+@import "main";
+@import "playbook";
