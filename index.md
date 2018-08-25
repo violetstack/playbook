@@ -14,7 +14,7 @@ layout: default
 We believe there is always a better way to do our work, and we want to find it and share it with as many people as possible.
 
 - Values
-- Sales
+- [Sales](/company/sales)
 - Operations
 
 ### Discovery
