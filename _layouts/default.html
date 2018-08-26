@@ -42,7 +42,14 @@
       </article>
 
       <footer class="footer">
+        <hr />
+        <div class="content mid-wrap">
+          {% if page.name == "index.md" %}
 
+          {% else %}
+            <a href="/">&larr; Back to Playbook</a>
+          {% endif %}
+        </div>
       </footer>
     </main>
   </body>

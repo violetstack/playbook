@@ -72,6 +72,7 @@
   height: 360px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-color: #682CF4;
   background-blend-mode: lighten;
   margin-bottom: 8.8rem;
@@ -84,4 +85,8 @@
 
 .hero-home {
   background-image: url('../images/hero-home@2x.jpg');
+}
+
+.footer {
+  padding-bottom: 8.8rem;
 }

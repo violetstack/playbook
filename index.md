@@ -13,7 +13,7 @@ layout: default
 
 We believe there is always a better way to do our work, and we want to find it and share it with as many people as possible.
 
-- Values
+- [Values](/company/values)
 - [Sales](/company/sales)
 - Operations
 - Remote First
